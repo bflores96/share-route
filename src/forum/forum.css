@@ -1,0 +1,236 @@
+/* Contenedor principal del foro */
+.forum-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f6f1e3; /* Fondo principal */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #6c699a; /* Texto principal */
+  font-family: "Arial", sans-serif;
+}
+
+/* Encabezado del foro */
+.forum-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forum-header h1 {
+  font-size: 2.5rem;
+  color: #e19cc8; /* Rosa principal */
+  font-weight: bold;
+  text-align: center; /* Centrado */
+  text-transform: uppercase; /* Mayúsculas */
+  padding: 20px;
+}
+
+.forum-header h1:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Resplandor al pasar el ratón */
+}
+
+.forum-subtitle {
+  font-size: 1.2rem;
+  color: black; /* Tono lavanda */
+}
+
+.forum-icon {
+  margin-left: 8px;
+  color: #6c699a;
+  transition: all 0.3s ease; /* Suaviza la transición */
+}
+
+.forum-icon:hover {
+  color: #4b4386; /* Color más oscuro al pasar el ratón */
+  transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilos para el formulario de login */
+.login-form {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.login-form h3 {
+  color: black;
+}
+
+.login-form input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #c8c2e0; /* Borde lavanda */
+  border-radius: 4px;
+  background-color: #f6f1e3; /* Fondo claro */
+}
+
+.login-form button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  color: #fff;
+  background-color: #6c699a; /* Fondo rosa */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #5a5787; /* Rosa más oscuro */
+  transform: translateY(-2px); /* Efecto de movimiento al pasar el ratón */
+}
+
+.error-message {
+  color: #e19cc8;
+  margin-top: 10px;
+}
+
+/* Formulario de comentarios */
+.forum-form {
+  margin-bottom: 20px;
+}
+
+.forum-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c8c2e0; /* Borde lavanda */
+  border-radius: 4px;
+
+  resize: none;
+}
+
+.button-container {
+  text-align: right;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  color: #fff;
+  background-color: #6c699a; /* Fondo violeta oscuro */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #5a5787; /* Violeta más oscuro */
+}
+
+/* Botón para alternar el formulario */
+.forum-toggle-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #6c699a; /* Fondo violeta oscuro */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.forum-toggle-button:hover {
+  background-color: #5a5787;
+}
+
+/* Mensajes */
+.forum-messages {
+  margin-top: 20px;
+}
+
+.forum-message {
+  background-color: #fff;
+  border: 1px solid #c8c2e0; /* Borde lavanda */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forum-message-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.forum-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #e19cc8; /* Rosa */
+}
+
+.forum-message-content {
+  margin-top: 10px;
+  color: #6c699a;
+}
+
+/* Respuestas */
+.forum-replies {
+  margin-top: 15px;
+  padding-left: 20px;
+  border-left: 2px solid #c8c2e0; /* Lavanda */
+}
+
+.forum-reply {
+  margin-bottom: 15px;
+}
+
+.forum-reply-form textarea {
+  width: calc(100% - 20px);
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #c8c2e0; /* Borde lavanda */
+  border-radius: 4px;
+  background-color: #f6f1e3;
+  resize: none;
+}
+
+/* Botones de respuesta y paginación */
+.forum-reply-button,
+.reply-toggle-button {
+  background-color: #6c699a; /* Violeta oscuro */
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 10px; /* Añade espacio entre los botones */
+}
+
+.forum-reply-button:hover,
+.reply-toggle-button:hover {
+  background-color: #5a5787;
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #e19cc8; /* Rosa */
+  color: #fff;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #d18dbb;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 1rem;
+}

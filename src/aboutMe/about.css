@@ -1,0 +1,140 @@
+.about-container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f6f1e3;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s forwards; /* Animación más rápida */
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  padding-right: 20px;
+  animation: slideInLeft 0.6s ease-in-out; /* Animación más rápida */
+}
+
+.about-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #e19cc8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-text strong {
+  font-weight: bold;
+  color: #000; /* Negrita más llamativa */
+}
+
+.about-image {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  animation: slideInRight 0.6s ease-in-out; /* Animación más rápida */
+}
+
+.about-image img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+/* Efecto hover en la imagen */
+.about-image img:hover {
+  transform: scale(1.05); /* Zoom suave */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+/* Animaciones clave */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-right: 0;
+  }
+
+  .about-image {
+    margin-top: 20px;
+  }
+
+  .about-image img {
+    max-width: 80%;
+  }
+}
+
+/* Sección del anuncio de TikTok */
+.tiktok-announcement {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: rgba(200, 194, 224, 0.4);
+  border: 2px solid #6c699a;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tiktok-icon {
+  color: #000;
+  margin-right: 10px;
+}
+
+.tiktok-announcement p {
+  margin: 0;
+}

@@ -1,0 +1,28 @@
+/* App.css o global.css */
+
+html,
+body {
+  height: 100%; /* Asegura que el body ocupe toda la pantalla */
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Hace que el contenedor ocupe el 100% de la ventana */
+}
+
+.main-content {
+  flex: 1; /* Empuja el footer hacia abajo */
+  margin-top: 80px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}

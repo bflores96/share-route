@@ -1,0 +1,169 @@
+/* Asegura que el contenido no quede oculto detrás del navbar */
+.home {
+  padding-top: 100px;
+  text-align: center;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* Ajusta el tamaño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .header-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para el encabezado */
+.home-header {
+  color: black;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+}
+
+/* Estilos para las cards de itinerarios */
+.itineraries {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.card-itinerary {
+  background-color: #f6f1e3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-itinerary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-itinerary h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-itinerary p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.btn-see-more {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #c8c2e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-see-more:hover {
+  background-color: #6c699a;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .itineraries {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .itineraries {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .itineraries {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sección de búsqueda */
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+/* Contenedor del input y el label */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Estilo del input */
+.search-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  background-color: #f4f4f4;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+  outline: none;
+  color: #333;
+}
+
+/* Label como placeholder flotante */
+.search-label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  transition: 0.3s ease all;
+  pointer-events: none;
+  background-color: #f4f4f4;
+  padding: 0 5px; /* Espacio para crear el hueco */
+}
+
+/* Mueve el label cuando el input está enfocado o tiene texto */
+.search-input:focus + .search-label,
+.search-input:not(:placeholder-shown) + .search-label {
+  top: -8px; /* Mueve el label hacia arriba */
+  font-size: 12px;
+  color: #007bff;
+  background-color: #f4f4f4;
+  padding: 0 5px; /* Mantiene el hueco */
+}
+
+/* Estilo del input al enfocarse */
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
