@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
+import "./home.css";
 
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
   return (
     <section className="search-section">
       <div className="search-container">
-        {" "}
-        {/* Contenedor adicional */}
         <input
           type="text"
           id="search"
@@ -17,6 +16,15 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         <label htmlFor="search" className="search-label">
           Buscar itinerarios...
         </label>
+        {searchTerm && (
+          <button
+            className="clear-button"
+            onClick={() => setSearchTerm("")}
+            aria-label="Clear search"
+          >
+            ✖
+          </button>
+        )}
       </div>
     </section>
   );

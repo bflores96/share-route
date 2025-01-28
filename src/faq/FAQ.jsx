@@ -13,7 +13,7 @@ const Faq = () => {
         </div>
         <div className="faq-questions">
           <div className="faq-item">
-            <h2>¿Cuál es el propósito de Explora Mi Ruta</h2>
+            <h2>¿Cuál es el propósito de Compartir Ruta?</h2>
             <p>
               Compartir Ruta es una web dedicada a compartir itinerarios de
               viaje detallados para ayudar e inspirar a otros viajeros.

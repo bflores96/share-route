@@ -2,14 +2,21 @@ import PropTypes from "prop-types"; // Importa PropTypes
 
 const SearchCoinBar = ({ searchTerm, setSearchTerm }) => {
   return (
-    <div className="search-coin-bar">
-      <input
-        type="text"
-        placeholder="Buscar por país..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-    </div>
+    <section className="search-section">
+      <div className="search-container">
+        <input
+          type="text"
+          id="search-coin"
+          placeholder=" "
+          className="search-input"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <label htmlFor="search-coin" className="search-label">
+          Buscar por país...
+        </label>
+      </div>
+    </section>
   );
 };
 
