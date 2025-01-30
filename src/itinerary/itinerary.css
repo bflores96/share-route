@@ -2,7 +2,6 @@
   margin: 0 auto;
   max-width: 1200px;
   padding: 20px;
-  font-family: "Arial", sans-serif;
 }
 
 .itinerary h1 {
@@ -198,7 +197,6 @@
   background-color: #f9f9f9;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  font-family: "Arial", sans-serif;
 }
 
 /* Estilo para el título de la sección de contenido */

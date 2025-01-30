@@ -2,6 +2,7 @@ import "./about.css";
 import aboutImage from "../assets/img/aboutjapan.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faFaceLaughWink } from "@fortawesome/free-regular-svg-icons";
 
 const About = () => {
   return (
@@ -10,38 +11,40 @@ const About = () => {
         <div className="about-text">
           <h1>Sobre mí</h1>
           <p>
-            Hola, mi nombre es <strong>Bárbara</strong> y me encanta viajar
-            tanto como a ti. Tengo un <strong>grado superior</strong> en guía,
-            información y asistencias turísticas. Ahora que he cambiado mi rumbo
-            laboral hacia la <strong>programación</strong>, quiero juntar las
-            dos cosas que me apasionan: <strong>crear una web</strong> donde
-            compartir mis itinerarios de viajes a diferentes destinos y de
-            diversa duración. Espero que esta web te sirva de{" "}
-            <strong>inspiración</strong> para tus aventuras y que descubras
-            lugares que quizás no habías considerado antes. ¡Espero que te
-            guste!
-          </p>
-          <div className="tiktok-announcement">
+            Hola, mi nombre es <strong>Bárbara</strong> y me encanta viajar.
+            Tengo un <strong>Grado Superior</strong> en Guía, Información y
+            Asistencias Turísticas y ahora, combinando mi pasión con la{" "}
+            <strong>programación</strong>, he creado esta web para compartir mis
+            itinerarios de viaje. Espero que te sirvan de{" "}
+            <strong>inspiración</strong> y descubras lugares nuevos.
             <FontAwesomeIcon
-              icon={faTiktok}
-              size="2x"
-              className="tiktok-icon"
+              icon={faFaceLaughWink}
+              className="fa-face-laugh-wink"
             />
+          </p>
+
+          <div className="tiktok-announcement">
+            <h2>¿Necesitas un itinerario personalizado?</h2>
             <p>
-              <strong>¡Próximo directo en TikTok!</strong> Voy a hacer directos
-              en mi próximo viaje a Japón. Recuerda que puedes ver mi
-              itinerario.
-              <br />
-              <strong>📅 Día 10 de Noviembre en Odaiba:</strong> te mostraré el
-              evento <strong>Tokyo Drift</strong>. <br />
-              <em>
-                Ten en cuenta que el horario de Japón es 8 horas más que en
-                España.
-              </em>{" "}
-              <br />
-              <strong>¡Sígueme para no perdértelo!</strong>{" "}
-              <span className="tiktok-username">@barbixflor</span>
+              Si buscas un <strong>itinerario a medida</strong>, puedo diseñarlo
+              según tus preferencias de alojamiento y actividades. Escríbeme a{" "}
+              <strong>shareroute@gmail.com</strong> y te ayudaré a un{" "}
+              <strong>precio simbólico</strong>. Me encanta investigar destinos
+              y así podré añadirlos a la web para otros viajeros. ✈️🌍
             </p>
+            <p>
+              También puedes seguirme en <strong>TikTok</strong> y ayudarme a
+              seguir creando contenido sobre viajes.{" "}
+              <strong>¡Únete a la comunidad viajera!</strong>
+            </p>
+            <div className="tiktok-info">
+              <FontAwesomeIcon
+                icon={faTiktok}
+                size="2x"
+                className="tiktok-icon"
+              />
+              <span className="tiktok-username"> @barbixflor</span>
+            </div>
           </div>
         </div>
         <div className="about-image">

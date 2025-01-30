@@ -2,20 +2,22 @@
 .home {
   padding-top: 100px;
   text-align: center;
-  background-color: #f8f9fa;
+  background-color: #f6f1e3; /* Fondo amarillo para integrar con la imagen */
   min-height: 100vh;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  border-radius: 12px;
 }
 
+/* Ajustamos la imagen para que el fondo se vea como parte del mismo diseño */
 .header-image {
   width: 100%;
   max-width: 350px;
   height: auto;
-  object-fit: contain;
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio */
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
   margin: 0 auto;
 }
 
@@ -52,16 +54,22 @@
 }
 
 .card-itinerary {
-  background-color: #f6f1e3;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más notoria */
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Borde sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que el contenido y el botón se distribuyan bien */
+  height: 100%; /* Asegura que todas las cards tengan la misma altura */
 }
 
 .card-itinerary:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px); /* Un poco más de elevación al hacer hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+  border-color: #f6f1e3; /* Resalta el borde al pasar el ratón */
 }
 
 .card-itinerary h3 {
@@ -74,21 +82,23 @@
   font-size: 1rem;
   color: #666;
   margin-bottom: 10px;
+  flex-grow: 1; /* Permite que el texto se expanda sin afectar el botón */
 }
 
 .btn-see-more {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #c8c2e0;
+  background-color: #6c699a;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: auto; /* Empuja el botón hacia la parte inferior */
 }
 
 .btn-see-more:hover {
-  background-color: #6c699a;
+  background-color: #5a5787;
 }
 
 /* Responsiveness */

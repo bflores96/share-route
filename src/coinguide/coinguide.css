@@ -2,7 +2,7 @@
 .coin-guide {
   padding: 40px;
   max-width: 1200px; /* Ajuste según lo indicado */
-  margin: 40px auto;
+  margin: 0 auto;
   background-color: #f8f9fa;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);

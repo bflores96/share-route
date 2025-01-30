@@ -1,4 +1,7 @@
 import "./Faq.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointUp } from "@fortawesome/free-regular-svg-icons";
+import { faGlasses } from "@fortawesome/free-solid-svg-icons";
 
 const Faq = () => {
   return (
@@ -9,6 +12,8 @@ const Faq = () => {
           <p>
             Aquí encontrarás respuestas a las preguntas más comunes sobre
             nuestra plataforma y cómo utilizarla.
+            <FontAwesomeIcon icon={faHandPointUp} className="icon-spacing" />
+            <FontAwesomeIcon icon={faGlasses} className="icon-spacing" />
           </p>
         </div>
         <div className="faq-questions">

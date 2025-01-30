@@ -1,9 +1,23 @@
 /* App.css o global.css */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap");
 
 html,
 body {
   height: 100%; /* Asegura que el body ocupe toda la pantalla */
   margin: 0;
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+}
+
+/* Usar Quicksand solo para títulos y elementos destacados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+  font-family: "Quicksand", sans-serif;
 }
 
 #root {

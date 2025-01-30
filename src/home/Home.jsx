@@ -11,7 +11,7 @@ const Home = () => {
   const itineraries = [
     {
       id: "paris-2024",
-      title: "París Enero 2024 desde DisneyLand🗼🌸",
+      title: "París Enero 2024 desde DisneyLand 🇫🇷",
       duration: "1 día",
       details: "Torre Eiffel, Museo del Louvre, Mercados Navideños.",
     },

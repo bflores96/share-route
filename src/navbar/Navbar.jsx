@@ -73,7 +73,7 @@ const Navbar = () => {
         <ul className={`navbar-links ${menuOpen ? "show" : ""}`}>
           <li>
             <Link to="/" className={location.pathname === "/" ? "active" : ""}>
-              Inicio
+              Itinerarios
             </Link>
           </li>
           <li>
