@@ -4,6 +4,8 @@ import "./Navbar.css";
 import logo from "../assets/img/logorute.png";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebaseConfig";
+import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,6 +20,12 @@ const Navbar = () => {
   const handleScroll = () => {
     const offset = window.scrollY;
     setScrolled(offset > 50);
+  };
+
+  const provider = new GoogleAuthProvider();
+
+  const handleLogin = () => {
+    signInWithRedirect(auth, provider);
   };
 
   // Función para cerrar sesión
@@ -107,7 +115,11 @@ const Navbar = () => {
         {user ? (
           <div className="user-info">
             {userPhotoURL ? (
-              <img src={userPhotoURL} alt="Avatar" className="user-avatar" />
+              <img
+                src={`${userPhotoURL}?t=${new Date().getTime()}`}
+                alt="Avatar"
+                className="user-avatar"
+              />
             ) : (
               <span>No photo</span> // Si no hay foto, se muestra un texto alternativo
             )}
